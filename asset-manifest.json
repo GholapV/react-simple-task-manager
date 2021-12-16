@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-simple-task-manager/static/css/main.ab21d6b6.chunk.css",
+    "main.css": "/react-simple-task-manager/static/css/main.5d191a15.chunk.css",
     "main.js": "/react-simple-task-manager/static/js/main.bb5d0b4b.chunk.js",
     "main.js.map": "/react-simple-task-manager/static/js/main.bb5d0b4b.chunk.js.map",
     "runtime-main.js": "/react-simple-task-manager/static/js/runtime-main.aeaa5438.js",
@@ -8,14 +8,14 @@
     "static/js/2.5608eb2d.chunk.js": "/react-simple-task-manager/static/js/2.5608eb2d.chunk.js",
     "static/js/2.5608eb2d.chunk.js.map": "/react-simple-task-manager/static/js/2.5608eb2d.chunk.js.map",
     "index.html": "/react-simple-task-manager/index.html",
-    "static/css/main.ab21d6b6.chunk.css.map": "/react-simple-task-manager/static/css/main.ab21d6b6.chunk.css.map",
+    "static/css/main.5d191a15.chunk.css.map": "/react-simple-task-manager/static/css/main.5d191a15.chunk.css.map",
     "static/js/2.5608eb2d.chunk.js.LICENSE.txt": "/react-simple-task-manager/static/js/2.5608eb2d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/react-simple-task-manager/static/media/pexels-background-2.2bbdf3f5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.aeaa5438.js",
     "static/js/2.5608eb2d.chunk.js",
-    "static/css/main.ab21d6b6.chunk.css",
+    "static/css/main.5d191a15.chunk.css",
     "static/js/main.bb5d0b4b.chunk.js"
   ]
 }
