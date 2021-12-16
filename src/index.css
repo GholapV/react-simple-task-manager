@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@600&family=Poppins:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-size: 4rem; */
+  font-family: "Poppins", sans-serif;
+}
+
+.background-div {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/images/pexels-background-2.jpg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3c6e71;
+  padding: 18px 0px;
+  text-align: center;
+  color: #edf2f4;
+}
+header h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.fas.fa-tasks {
+  font-size: 2rem;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section {
+  position: relative;
+  background-color: rgb(225, 225, 225, 0.3);
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 35%;
+  padding: 22px 12px;
+  border-radius: 12px;
+}
+.main-section .taskdiv {
+  margin: 10px 0px;
+  background-color: #fff;
+  padding: 15px 15px 5px 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 8px solid #588b8b;
+}
+.main-section .taskdiv.done {
+  opacity: 0.4;
+  border: none;
+}
+.main-section .taskdiv.notdone {
+  opacity: 0.9;
+}
+
+.main-section div .taskname {
+  font-size: 1.2rem;
+}
+.main-section div .taskday {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #8d0801;
+  text-decoration: overline;
+}
+.icon-section i {
+  font-size: 1.2rem;
+  margin: 0px 5px;
+}
+.icon-section .far.fa-edit {
+  color: #03045e;
+}
+.icon-section .fas.fa-minus-circle {
+  color: #8d0801;
+}
+
+.button-div {
+  margin: 20px 0px;
+}
+.button-div button {
+  padding: 6px 18px;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.button-div .add {
+  background-color: #3c6e71;
+}
+.button-div .clear-all {
+  margin-left: 8px;
+  background-color: #8d0801;
+}
+
+.modal-div {
+  position: fixed;
+  top: calc((100vh - 375px) / 2);
+  right: 30%;
+  width: 40%;
+  padding: 8px;
+  height: 375px;
+  background-color: #f6fff8;
+  border-radius: 8px;
+}
+
+.modal-div section {
+  border: 2px solid #3c6e71;
+  height: 100%;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.modal-inputs .label-taskname {
+  color: #4a4e69;
+  font-size: 1.8rem;
+}
+.modal-inputs .label-status {
+  color: #4a4e69;
+  font-size: 1.3rem;
+}
+
+input[type="text"] {
+  margin-top: 8px;
+  width: 75%;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+input[type="text"]:focus {
+  outline: 3px solid lightsteelblue;
+  border: 1px solid rgb(116, 161, 221);
+}
+
+.modal-inputs select {
+  margin-top: 12px;
+  width: 45%;
+  padding: 10px;
+  border: none;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+.modal-inputs select:focus {
+  outline: 3px solid lightsteelblue;
+  border: 1px solid rgb(116, 161, 221);
+}
+
+.modal-inputs .clear-button {
+  margin-left: 25px;
+  border: none;
+  padding: 10px 16px;
+  background: #3c6e71;
+  border-radius: 4px;
+}
+
+.modal-buttons {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-buttons button {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3c6e71;
+  text-transform: capitalize;
+}
+
+.empty-section {
+  border: 4px solid white;
+  margin-top: 85px;
+  font-size: 2.3rem;
+  opacity: 0.8;
+  color: white;
+  width: 50%;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 12px 0px;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  .main-section {
+    width: 50%;
+  }
+  .main-section .taskdiv {
+    padding: 10px 10px 4px 10px;
+  }
+  .main-section .taskdiv .taskname {
+    font-size: 1.3rem;
+  }
+  .main-section .taskdiv .taskday {
+    font-size: 8px;
+  }
+  .main-section .taskdiv i {
+    font-size: 14px;
+  }
+  .button-div button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+  .modal-div {
+    height: 275px;
+    top: calc((100vh - 275px) / 2);
+  }
+  .modal-div .label-taskname {
+    font-size: 16px;
+  }
+  .modal-div .label-status {
+    font-size: 14px;
+  }
+  .modal-div input[type="text"] {
+    width: 100%;
+    padding: 3px 6px;
+    font-size: 14px;
+  }
+  .modal-div select {
+    width: 80%;
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  .modal-buttons {
+    margin-top: 20px;
+  }
+  .modal-buttons button {
+    padding: 6px 0px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-section {
+    width: 80%;
+  }
+  .main-section .taskdiv {
+    padding: 18px 18px 5px 18px;
+  }
+  .main-section .taskdiv .taskname {
+    font-size: 1.2rem;
+  }
+  .main-section .taskdiv .taskday {
+    font-size: 7px;
+  }
+  .empty-section {
+    font-size: 1rem;
+    padding: 16px 0;
+  }
+  .modal-div {
+    height: 275px;
+    width: 75%;
+    right: 12.5%;
+    top: calc((100vh - 275px) / 2);
+  }
+}
